@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 
-const encryptedFile = path.join(__dirname, "..", "encrypted.bin");
+const encryptedFile = path.join(__dirname, "..", "downloaded.bin");
 const outputFile = path.join(__dirname, "..", "decrypted.pdf");
 const keyDir = path.join(__dirname, "keys");
 
