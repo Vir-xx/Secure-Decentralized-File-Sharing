@@ -24,7 +24,7 @@ async function uploadFile() {
   );
 
   console.log("✅ File uploaded to IPFS");
-  console.log("📌 CID:", response.data.IpfsHash);
+  console.log("CID:", response.data.IpfsHash);
 }
 
 uploadFile().catch(console.error);
