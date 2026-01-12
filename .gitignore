@@ -4,3 +4,8 @@ node_modules/
 encryption/keys/
 encrypted.bin
 decrypted.pdf
+encrypted.*
+decrypted.*
+image.png
+image-1.png
+image-2.png
