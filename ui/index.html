@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure Decentralized File Sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- App Container -->
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>🔐 Secure File Sharing</h1>
+      <p>End-to-End Encrypted · IPFS · Polygon Blockchain</p>
+    </header>
+
+    <!-- Wallet Section -->
+    <section class="card">
+      <h2>👛 Wallet</h2>
+      <button id="connectWalletBtn">Connect MetaMask</button>
+      <p id="walletAddress">Not connected</p>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="card">
+      <h2>📁 Upload & Encrypt File</h2>
+      <input type="file" id="fileInput" />
+      <button id="encryptUploadBtn">Encrypt & Upload to IPFS</button>
+      <p id="ipfsStatus">No file uploaded</p>
+    </section>
+
+    <!-- Blockchain Section -->
+    <section class="card">
+      <h2>⛓️ Store CID on Blockchain</h2>
+      <input type="text" id="cidInput" placeholder="IPFS CID" />
+      <input type="text" id="receiverInput" placeholder="Receiver Address" />
+      <button id="storeCidBtn">Store on Polygon</button>
+      <p id="txStatus">No transaction yet</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built with ❤️ using Web3 · IPFS · Polygon</p>
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+</html>
